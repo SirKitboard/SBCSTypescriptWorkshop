@@ -71,7 +71,7 @@ var config = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   }
 };
 
@@ -81,7 +81,7 @@ module.exports = config;
 Now run
 
 ```
-npm install --save-dev babel-core babel-loader babel-preset-2015 babel-preset-2016 babel-preset-es2017 babel-preset-react
+npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-es2016 babel-preset-es2017 babel-preset-react
 ```
 
 Create a new file called .babelrc
@@ -103,7 +103,7 @@ var config = {
 			{
 				test : /\.jsx?/,
 				include : APP_DIR,
-				loader : 'babel'
+				loader : 'babel-loader'
 			}
 		]
 	}
